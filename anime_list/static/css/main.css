@@ -1,0 +1,105 @@
+*{
+    /* border: 1px solid yellowgreen; */
+    margin: 0;
+    color: black;
+}
+
+body{
+    background-image: linear-gradient(180deg, wheat, white );
+    min-height: 100vh;
+}
+/* Nav*/
+
+.navigation{
+    justify-content: space-between;
+    position: relative; 
+    width: 100vw;
+    height: 10%;
+    text-align: center;
+    background-color: #32612D;
+    border-bottom: 3px solid black;  
+}
+
+#horizontal-list{
+    min-width: 785px;
+    list-style: none;
+    padding-top: 20px;
+}
+
+#horizontal-list li, #horizontal-list a{
+    display: inline;
+    text-decoration: none;
+    padding: .5vw;
+    color: white;
+    
+}
+
+#horizontal-list a:nth-last-child(1){
+    background-color: white;
+    border-radius: .3vw; 
+}
+
+/* End Nav */
+
+/* Header */
+.button{
+    background-color: #32612D;
+    color: white;
+    border: 3px solid black;
+    border-radius: .3vw;
+    padding: .5vw;
+    margin: .2vw;
+}
+
+header{
+    text-align: right;
+}
+
+#header-text{
+    padding: 2vw;
+}
+
+
+
+/* End Header */
+
+/* Middle */
+
+
+.row img{
+    width: 3vw;
+    margin-bottom: 2vh; 
+}
+
+#middle-text{
+    text-align: center;
+    padding: 13vh; 
+}
+
+#middle-text h2{
+    padding: 1.5vw; 
+    
+}
+
+#middle{
+    margin: 10vw; 
+    text-align: right;
+    
+}
+
+/* End Middle */
+
+/* Footer */
+
+
+
+#footer{
+    align-content: center;
+    text-align: center;
+    color: black;
+    margin-top: 30vh; 
+    padding-top: 3vh;
+    width: 100%;
+}
+
+/* End Footer */

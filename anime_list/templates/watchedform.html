@@ -1,0 +1,50 @@
+<form method="POST">
+    {{ form.hidden_tag()}}
+    <div class = "form-group">
+        <fieldset>
+            {{ form.title.label }}
+            {{ form.title(class="form-control", placeholder="Title") }}
+        </fieldset>
+
+        <fieldset>
+            {{ form.synopsis.label }}
+            {{ form.synopsis(class="form-control", placeholder="Synopsis") }}
+        </fieldset>
+
+        <fieldset>
+            {{ form.episodes.label }}
+            {{ form.episodes(class="form-control", placeholder="Episode Count") }}
+        </fieldset>
+
+        <fieldset>
+            {{ form.rank.label }}
+            {{ form.rank(class="form-control", placeholder="Rank") }}
+        </fieldset>
+
+        <fieldset>
+            {{ form.rating.label }}
+            {{ form.rating(class="form-control", placeholder="Rating") }}
+        </fieldset>
+
+        <fieldset>
+            {{ form.aired.label }}
+            {{ form.aired(class="form-control", placeholder="Airdates") }}
+        </fieldset>
+
+        <fieldset>
+            {{ form.status.label }}
+            {{ form.status(class="form-control", placeholder="Status") }}
+        </fieldset>
+
+        <fieldset>
+            {{ form.score.label }}
+            {{ form.score(class="form-control", placeholder="Score") }}
+        </fieldset>
+
+        <fieldset>
+            {{ form.user_score.label }}
+            {{ form.user_score(class="form-control", placeholder="User Score") }}
+        </fieldset>
+        {{ form.submit_button(class="button") }}
+    </div>
+</form>

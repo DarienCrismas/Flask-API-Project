@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block content %}
+
+<main class="container watchedform">
+  <div class="row">
+      <aside class="col-12 col-md-6">
+          <h2>Add a Series!</h2>
+          {% include "watchedform.html" %}
+      </aside>
+  </div>
+</main>
+
+
+<div class = "container">
+    <div class="row">
+        {% for series in watched %}
+        <div class="card text-center" style="width: 18rem;">
+          <img src="../../static/images/Border_Emblem_2.png" class="card-img-top" alt="border logo from world trigger">
+            <div class="card-body">
+              <h5 class="card-title">{{ series.title }}</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">{{series.synopsis}}</li>
+              <li class="list-group-item">{{series.episodes}}</li>
+              <li class="list-group-item">{{series.rank}}</li>
+              <li class="list-group-item">{{series.rating}}</li>
+              <li class="list-group-item">{{series.user_score}}</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Update Series</a>
+              <a href="{{url_for('site.remove_watched', id = series.id)}}" class="card-link">Remove Series</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,6 @@
+/* Card Image */
+.card img{
+    margin: 0 auto;
+    padding: 2vh;
+    width: 50%;
+}
